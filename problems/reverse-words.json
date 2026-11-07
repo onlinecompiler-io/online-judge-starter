@@ -1,0 +1,41 @@
+{
+  "id": "reverse-words",
+  "slug": "reverse-words",
+  "title": "Reverse the Words",
+  "difficulty": "Easy",
+  "statement": "Read one line of text and print its words in reverse order, separated by single spaces.\n\nWords are separated by one or more spaces. Ignore leading and trailing spaces.\n\n## Input\n\nOne line with at least one word.\n\n## Output\n\nThe words of the line in reverse order, separated by single spaces.\n\n## Example\n\nInput:\n\n```\nthe quick brown fox\n```\n\nOutput:\n\n```\nfox brown quick the\n```\n",
+  "starter": {
+    "python-3.14": "line = input()\n# Print the words in reverse order\n",
+    "nodejs-24": "const line = require('fs').readFileSync(0, 'utf8');\n// Print the words in reverse order\n",
+    "g++-15": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string line;\n    std::getline(std::cin, line);\n    // Print the words in reverse order\n    return 0;\n}\n",
+    "openjdk-25": "import java.util.Scanner;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        String line = in.nextLine();\n        // Print the words in reverse order\n    }\n}\n"
+  },
+  "samples": [
+    {
+      "input": "the quick brown fox\n",
+      "expected_output": "fox brown quick the\n"
+    },
+    {
+      "input": "hello\n",
+      "expected_output": "hello\n"
+    }
+  ],
+  "tests": [
+    {
+      "input": "  spaced   out   words here  \n",
+      "expected_output": "here words out spaced\n"
+    },
+    {
+      "input": "one two\n",
+      "expected_output": "two one\n"
+    },
+    {
+      "input": "zebra yak xylophone wolf vulture umbrella\n",
+      "expected_output": "umbrella vulture wolf xylophone yak zebra\n"
+    },
+    {
+      "input": "a b c d e f g h i j\n",
+      "expected_output": "j i h g f e d c b a\n"
+    }
+  ]
+}

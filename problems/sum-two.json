@@ -1,0 +1,41 @@
+{
+  "id": "sum-two",
+  "slug": "sum-two",
+  "title": "Sum of Two Numbers",
+  "difficulty": "Easy",
+  "statement": "Read two integers `a` and `b` from standard input, on one line separated by a space, and print their sum.\n\n## Input\n\nOne line with two integers `a` and `b`, where `-10^9 <= a, b <= 10^9`.\n\n## Output\n\nOne integer: `a + b`.\n\n## Example\n\nInput:\n\n```\n3 4\n```\n\nOutput:\n\n```\n7\n```\n",
+  "starter": {
+    "python-3.14": "a, b = map(int, input().split())\n# Print the sum\n",
+    "nodejs-24": "const [a, b] = require('fs').readFileSync(0, 'utf8').trim().split(/\\s+/).map(Number);\n// Print the sum\n",
+    "g++-15": "#include <iostream>\n\nint main() {\n    long long a, b;\n    std::cin >> a >> b;\n    // Print the sum\n    return 0;\n}\n",
+    "openjdk-25": "import java.util.Scanner;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        long a = in.nextLong();\n        long b = in.nextLong();\n        // Print the sum\n    }\n}\n"
+  },
+  "samples": [
+    {
+      "input": "3 4\n",
+      "expected_output": "7\n"
+    },
+    {
+      "input": "-5 12\n",
+      "expected_output": "7\n"
+    }
+  ],
+  "tests": [
+    {
+      "input": "1000000000 1000000000\n",
+      "expected_output": "2000000000\n"
+    },
+    {
+      "input": "-1000000000 -999999999\n",
+      "expected_output": "-1999999999\n"
+    },
+    {
+      "input": "0 0\n",
+      "expected_output": "0\n"
+    },
+    {
+      "input": "734918 265082\n",
+      "expected_output": "1000000\n"
+    }
+  ]
+}
